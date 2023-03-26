@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors: {
+        'salam-blue': '#081F33',
+        'base-grey': '#F5F8FB',
+        'bright-green': '#00B140',
+        salamgreen: '#00AE42',
+        accent: '#00AE42',
+        'aqua-green': '#D9FFE9',
+        'light-red': '#FFEFEF',
+        'light-green': 'rgba(26, 176, 70, 0.2)',
+        //'primary': '#01B140',
+        'primary-light': '#c4e9d6',
+        'roman-silver': '#80909A',
+        'black-rgba': 'rgba(0, 0, 0, 0.35)',
+        'salam-background': '#E5E5E5',
+      },
+            }
+          }
+        }
+      </script>
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      name="header"
+      class="bg-salam-blue justify-between border-b-[0.5px] border-white px-12 w-full p-2 text-white flex"
+    >
+      <div class="hidden md:flex text-sm flex-row">
+        <h3 class="py-2">About Us</h3>
+        <div class="w-[1px] my-1 mx-4 bg-white"></div>
+        <h3 class="py-2">Contact Us</h3>
+        <div class="w-[1px] my-1 mx-4 bg-white"></div>
+
+        <h3 class="py-2">Complaints</h3>
+      </div>
+      <div class=""><h3>عربي</h3></div>
+    </div>
+
+    <div
+      name="header-2"
+      class="relative bg-salam-blue px-12 w-full p-10 text-white flex"
+    >
+      <img class="absolute z-10" src="./assets/logo.svg" />
+      <div
+        class="hidden md:flex gap-8 w-full justify-center font-semibold text-sm flex-row"
+      >
+        <h3 class="py-2">iPhone</h3>
+        <h3 class="py-2">Postpaid</h3>
+        <h3 class="py-2">Prepaid</h3>
+        <h3 class="py-2">Embedded SIM</h3>
+        <h3 class="py-2">FAQ</h3>
+      </div>
+      <img
+        class="absolute hidden md:flex right-10"
+        src="./assets/profile.svg"
+      />
+    </div>
+
+    <!-- <div name="carousel" class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="./assets/slide1.jpeg" class="w-full" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide2" class="btn btn-circle bg-salamgreen text-white"
+            >❮</a
+          >
+          <a href="#slide2" class="btn btn-circle bg-salamgreen text-white"
+            >❯</a
+          >
+        </div>
+      </div>
+
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./assets/slide2.jpeg" class="w-full" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle bg-salamgreen text-white"
+            >❮</a
+          >
+          <a href="#slide1" class="btn btn-circle bg-salamgreen text-white"
+            >❯</a
+          >
+        </div>
+      </div>
+    </div> -->
+    <div class="carousel relative shadow-2xl bg-white">
+        <div class="carousel-inner relative overflow-hidden w-2/3">
+          <!--Slide 1-->
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item absolute opacity-0" style="height:75vh;">
+            <img src="./assets/slide1.jpeg" class="w-full" />
+          </div>
+          <label for="carousel-2" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-500 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+          <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+    
+          <!--Slide 2-->
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item absolute opacity-0" style="height:75vh;">
+            <img src="./assets/slide2.jpeg" class="w-full" />
+          </div>
+          <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+          <label for="carousel-1" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+    
+         
+          <!-- Add additional indicators for each slide-->
+          <ol class="carousel-indicators">
+            <li class="inline-block mr-3">
+              <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+            <li class="inline-block mr-3">
+              <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+           
+          </ol>
+    
+        </div>
+    <div name="body" class="bg-white p-10 h-screen">
+      <div
+        class="bg-slate-100 p-4 font-semibold text-salamgreen flex gap-6 justify-center"
+      >
+        <h3 class="underline">Prepaid Plans</h3>
+        <h3>Postpaid Plans</h3>
+      </div>
+    </div>
+  </body>
+</html>
