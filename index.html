@@ -365,7 +365,7 @@
           </div>
         </div>
       </div>
-      <div name="download-app-section" class="flex items-center gap-10">
+      <div name="download-app-section" class="md:flex items-center gap-10">
         <img src="./assets/salam-mobile.png" width="500" />
         <div class="place-items-center">
           <h2 class="text-4xl text-salam-green">Salam Mobile application</h2>
@@ -385,7 +385,7 @@
         </div>
       </div>
 
-      <div name="download-app-section" class="flex items-center gap-10">
+      <div name="download-app-section" class="md:flex items-center gap-10">
         <div class="place-items-center">
           <h2 class="text-4xl text-salam-green">
             Visit Salam stores to explore our products
@@ -404,7 +404,7 @@
     <!-- footer -->
     <footer class='bg-salam-blue'>
       <div class="container mx-auto py-12 text-white">
-        <div class="grid grid-cols-4 gap-3 py-12 mb-12 footer-links">
+        <div class="flex text-center md:text-left flex-col md:grid grid-cols-4 gap-3 py-12 mb-12 footer-links">
           <a href="#">Salam</a>
           <a href="#">Download App</a>
           <a href="#">About Us</a>
@@ -419,14 +419,16 @@
           <a href="#">Regulating For Curbing SPAM Messages & Calls</a>
           <a href="#">Salam Mobile Stores</a>
         </div>
-        <div class="flex justify-between footer-link-container pt-12">
-          <div class="flex gap-8 max-w-[700px]">
-            <p>© salam Mobile 2021 - 2023,</p>
+        <div class="flex flex-col md:flex-row  text-center md:text-left justify-between footer-link-container pt-12">
+          <div class="md:flex items-center">
+          <p>© salam Mobile 2021 - 2023,</p>
+          <div class="flex gap-8 max-w-[700px] my-5 mx-5">
             <a href="#">Terms & Conditions</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Security Policy</a>
           </div>
-          <div class="flex gap-10">
+          </div>
+          <div class="flex gap-10 items-center justify-center">
             <a href="#"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i></a>
             <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
             <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
