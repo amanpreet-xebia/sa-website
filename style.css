@@ -41,5 +41,5 @@
   ~ .carousel-indicators
   li:nth-child(3)
   .carousel-bullet {
-  color: #ffb317; /*Set to match the Tailwind colour you want the active one to be */
+  color: #00b140; /*Set to match the Tailwind colour you want the active one to be */
 }
