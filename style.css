@@ -3,6 +3,14 @@
 @tailwind utilities;
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+.logo{
+  width: 25%;
+}
 .carousel-open:checked + .carousel-item {
   position: static;
   opacity: 100;
@@ -53,9 +61,44 @@
   font-weight: 900;
   margin-right: 10px;
 }
-.footer-link-container{
+.footer-link-container {
   border-top: 1px solid #ffffff;
 }
-.footer-link-container p, .footer-link-container a{
+.footer-link-container p,
+.footer-link-container a {
   font-size: 14px;
+}
+.menu-button {
+  display: none;
+}
+.fa-close{
+  display: none !important;
+}
+.fa-close:before{
+  content: "\f00d";
+}
+.menu-button:checked ~ .menu-button-label>.fa-bars{
+  display: none;
+}
+.menu-button:checked ~ .menu-button-label .fa-close{
+  display: block !important;
+}
+
+.menu-button-label{
+  display: block;
+  right: 40px;
+  position: absolute;
+  z-index: 101;
+}
+.menu-button:checked ~ .menu-list {
+  display: flex;
+  height: 100%;
+  background: #081e33;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  flex-direction: column;
+  text-align: center;
 }
