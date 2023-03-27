@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
 .carousel-open:checked + .carousel-item {
   position: static;
@@ -42,4 +43,19 @@
   li:nth-child(3)
   .carousel-bullet {
   color: #00b140; /*Set to match the Tailwind colour you want the active one to be */
+}
+
+.footer-links > a {
+}
+.footer-links > a:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  font-weight: 900;
+  margin-right: 10px;
+}
+.footer-link-container{
+  border-top: 1px solid #ffffff;
+}
+.footer-link-container p, .footer-link-container a{
+  font-size: 14px;
 }
