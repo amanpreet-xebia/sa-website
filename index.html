@@ -26,8 +26,10 @@
       </div>
       <div class="self-end"><h3>عربي</h3></div>
     </header>
+
     <!-- navigation-->
     <nav class="h-20 md:h-full bg-salam-blue px-12 w-full p-5 text-white flex">
+      <!-- mobile burger menu -->
       <input
         type="checkbox"
         name=""
@@ -45,10 +47,151 @@
       <div
         class="menu-list hidden md:flex gap-8 w-full justify-center font-semibold text-sm flex-row"
       >
+        <!-- navigation list(link+dropdown) -->
+        <!-- iPhone link -->
         <a href="#" class="py-2">iPhone</a>
-        <a href="#" class="py-2">Postpaid</a>
-        <a href="#" class="py-2">Prepaid</a>
+        <!-- Postpaid dropdown -->
+        <div class="dropdown inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Postpaid</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="dropdown-menu absolute -left-10 hidden bg-salam-blue text-white text-center pt-1 w-[150px]"
+          >
+            <li class="">
+              <a
+                class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo 74 Postpaid</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo Postpaid</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo 179 Postpaid</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo 199 Postpaid</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo Infinite Postpaid</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Prepaid Dropdown -->
+        <div class="dropdown inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Prepaid</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="dropdown-menu absolute -left-10 hidden bg-salam-blue text-white text-center pt-1 w-[150px]"
+          >
+            <li class="">
+              <a
+                class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo 74 Prepaid</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo Prepaid</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo 179 Prepaid</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo 199 Prepaid</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Solo Infinite Prepaid</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Embedded SIM link -->
         <a href="#" class="py-2">Embedded SIM</a>
+        <div class="dropdown inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Addons</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="dropdown-menu absolute -left-10 hidden bg-salam-blue text-white text-center pt-1 w-[150px]"
+          >
+            <li class="">
+              <a
+                class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >Data Roaming Bundles</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                href="#"
+                >IDD Bundles</a
+              >
+            </li>
+          </ul>
+        </div>
         <a href="#" class="py-2">FAQ</a>
       </div>
       <img
@@ -129,6 +272,7 @@
           </svg>
         </div>
       </div>
+
       <!-- carousel -->
       <div class="carousel relative bg-white">
         <div class="carousel-inner relative overflow-hidden w-screen">
@@ -198,15 +342,19 @@
           </ol>
         </div>
       </div>
+
       <div class="container mx-auto py-12">
+        <!-- Plan Selection Section -->
         <div
           name="selection-plan"
           class="bg-light-grey rounded-md p-4 font-semibold text-salam-green flex gap-6 justify-center"
         >
-          <h3 class="underline">Prepaid Plans</h3>
-          <h3>Postpaid Plans</h3>
+          <button class="plan-select prepaid">Prepaid Plans</button>
+          <button class="plan-select postpaid">Postpaid Plans</button>
         </div>
-        <div name="cards-section" class="m-10 md:grid grid-cols-2 gap-10">
+        <!-- Cards Section -->
+
+        <div class="prepaid-cards m-10 md:grid grid-cols-2 gap-10">
           <div
             name="card"
             class="shadow-2xl justify-center my-6 pb-5 bg-white rounded-2xl"
@@ -499,26 +647,11 @@
                 Select
               </button>
             </div>
-            <!-- 
-            <div
-              name="card-footer"
-              class="m-4 font-light text-sm flex gap-6 text-salam-blue"
-            >
-              <img src="./assets/sim.png" width="50" />
-              <div>
-                <p>Additional Data SIM *</p>
-                <p class="text-roman-silver">
-                  Enjoy Salam Mobile internet connection with the additional
-                  data SIM
-                </p>
-              </div>
-            </div> -->
           </div>
         </div>
-        <div
-          name="download-app-section"
-          class="md:flex justify-between mx-10 gap-10"
-        >
+
+        <!-- Article Section 1 -->
+        <div class="md:flex justify-between mx-10 gap-10">
           <div class="place-items-center md:hidden block">
             <h2 class="text-4xl text-salam-green">Salam Mobile application</h2>
             <p class="mt-6 text-salam-blue">
@@ -559,11 +692,8 @@
             </button>
           </div>
         </div>
-
-        <div
-          name="download-app-section"
-          class="md:flex justify-between items-center gap-10 mx-10"
-        >
+        <!-- Article Section 2 -->
+        <div class="md:flex justify-between items-center gap-10 mx-10">
           <div class="place-items-center">
             <h2 class="text-4xl text-salam-green">
               Visit Salam stores to explore our products
