@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="bg-salam-green justify-end md:justify-between border-b-[0.5px] border-white px-12 w-full p-2 text-white flex"
+    >
+      <div class="hidden md:flex text-sm flex-row">
+        <h3 class="py-2">About Us</h3>
+        <div class="w-[1px] my-1 mx-4 bg-white"></div>
+        <a href="./contactUs.html" class="py-2">Contact Us</a>
+        <div class="w-[1px] my-1 mx-4 bg-white"></div>
+
+        <h3 class="py-2">Complaints</h3>
+      </div>
+      <div class="self-end"><h3>عربي</h3></div>
+    </header>
+
+    <!-- navigation-->
+    <nav class="h-20 md:h-full bg-salam-blue px-12 w-full p-5 text-white flex">
+      <!-- mobile burger menu -->
+      <input
+        type="checkbox"
+        name=""
+        id="menu-selector"
+        class="menu-button md:hidden"
+      />
+      <label for="menu-selector" class="menu-button-label text-3xl md:hidden">
+        <i class="fa fa-close"></i>
+        <i class="fa fa-bars"></i>
+      </label>
+      <a href="./index.html">
+        <img
+          class="logo absolute left-0 top-3 z-10 w-[15%] md:w-auto"
+          src="./assets/logo.svg"
+      /></a>
+      <div
+        class="menu-list hidden md:flex gap-8 w-full justify-center font-semibold text-sm flex-row"
+      >
+        <!-- navigation list(link+dropdown) -->
+        <!-- iPhone link -->
+        <a href="#" class="py-2">iPhone</a>
+        <!-- Postpaid dropdown -->
+        <div class="dropdown md:inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Postpaid</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <div class="flex">
+            <ul
+              class="dropdown-menu m-auto pl-40 md:pl-0 md:absolute right-10 md:-left-10 hidden bg-salam-blue content-end text-white text-left md:text-center pt-1 md:w-[150px]"
+            >
+              <li class="">
+                <a
+                  class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 74 Postpaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo Postpaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 179 Postpaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 199 Postpaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo Infinite Postpaid</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Prepaid Dropdown -->
+        <div class="dropdown md:inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Prepaid</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <div class="flex">
+            <ul
+              class="dropdown-menu m-auto pl-40 md:pl-0 md:absolute right-10 md:-left-10 hidden bg-salam-blue content-end text-white text-left md:text-center pt-1 md:w-[150px]"
+            >
+              <li class="">
+                <a
+                  class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 74 Prepaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo Prepaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 179 Prepaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 199 Prepaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo Infinite Prepaid</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Embedded SIM link -->
+        <a href="#" class="py-2">Embedded SIM</a>
+        <!-- Addons Dropdown -->
+        <div class="dropdown md:inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Addons</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <div class="flex">
+            <ul
+              class="dropdown-menu m-auto pl-40 md:pl-0 md:absolute right-10 md:-left-10 hidden bg-salam-blue content-end text-white text-left md:text-center pt-1 md:w-[150px]"
+            >
+              <li class="">
+                <a
+                  class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Data Roaming Bundles</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >IDD Bundles</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="py-2">FAQ</a>
+      </div>
+      <img
+        class="absolute hidden md:flex right-10"
+        src="./assets/profile.svg"
+      />
+    </nav>
+
+    <!-- main section -->
+    <main>
+      <div class="m-8 md:m-20 mt-20 text-salam-blue">
+        <p class="text-xs font-extralight my-2">About Salam Mobile</p>
+        <h1 class="text-4xl font-extrabold">Salam!</h1>
+        <div class="my-6">
+          <p class="py-3 font-light">
+            Say goodbye to complicated plans and big promises.
+          </p>
+
+          <p class="py-3 font-light">
+            And say hello to simple choices and the fairest deals.
+          </p>
+          <p class="py-3 font-light">
+            We're Salam Mobile, Saudi Arabia's new mobile service. We believe
+            that everyone is unique. That everyone can make a difference. That's
+            why in a world full of sameness, we've created a mobile service that
+            gives you the power to be you, easily and seamlessly, with plans so
+            simple all you have to do is choose your plan … and just be you.
+          </p>
+        </div>
+        <video controls>
+          <source
+            src="https://salammobile.sa/wp-content/uploads/2022/02/SALAM_MOBILE_MAIN_ONLINE_YOUTUBE.mp4"
+            type="video/mp4"
+          />
+
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="my-10">
+          <h3 class="text-lg font-bold">
+            We are young, but wise beyond our years.
+          </h3>
+          <p>
+            Our parent company, Salam, has been connecting businesses,
+            government institutions, neighborhoods, and homes since 2005 as one
+            of Saudi Arabia's leading telecom companies with one of the region's
+            most established networks.
+          </p>
+          <p>
+            Now, with Salam Mobile, we're proud to make a difference as a 100%
+            home-grown Saudi mobile carrier proudly inspired by Saudi Arabia's
+            Generation Now.
+          </p>
+        </div>
+      </div>
+      <div
+        class="justify-center flex-col text-center p-20 bg-grey-background flex"
+      >
+        <h2 class="text-xl text-salam-blue font-bold">Why Salam?</h2>
+        <div class="md:flex gap-5 mx-auto">
+          <a class="text-center" href="#">
+            <img width="150" src="./assets/reliable.svg" />
+            <p>Reliable</p>
+          </a>
+          <a class="text-center" href="#">
+            <img width="150" src="./assets/easy.svg" />
+            <p>Easy</p>
+          </a>
+          <a class="text-center" href="#">
+            <img width="150" src="./assets/digitalFirst.svg" />
+            <p>Digital First</p>
+          </a>
+          <a class="text-center" href="#">
+            <img width="150" src="./assets/fair.svg" />
+            <p>Fair</p>
+          </a>
+          <a class="text-center" href="#">
+            <img width="150" src="./assets/innovative.svg" />
+            <p>Innovative</p>
+          </a>
+
+          <a class="text-center" href="#"
+            ><img width="150" src="./assets/social.svg" />
+            <p>Social</p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-salam-blue">
+      <div class="container mx-auto py-12 text-white">
+        <div
+          class="flex text-center md:text-left flex-col md:grid grid-cols-4 gap-3 py-12 mb-12 footer-links"
+        >
+          <a href="#">Salam</a>
+          <a href="#">Download App</a>
+          <a href="#">About Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Salam Mobile</a>
+          <a href="#">Activate SIM Card</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Complaints</a>
+          <a href="#">Salam Business</a>
+          <a href="#">APN Setting Guide</a>
+          <a href="#">News</a>
+          <a href="#">Regulating For Curbing SPAM Messages & Calls</a>
+          <a href="#">Salam Mobile Stores</a>
+        </div>
+        <div
+          class="flex flex-col md:flex-row text-center md:text-left justify-between footer-link-container pt-12"
+        >
+          <div class="md:flex items-center">
+            <p>© salam Mobile 2021 - 2023,</p>
+            <div class="flex gap-8 max-w-[700px] my-8 mx-5 justify-center">
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Security Policy</a>
+            </div>
+          </div>
+          <div class="flex gap-10 items-center justify-center">
+            <a href="#"
+              ><i class="fab fa-snapchat-ghost" aria-hidden="true"></i
+            ></a>
+            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'button-purple': 'rgb(82,69,194)',
+              'grey-input-color': 'rgb(245,245,245)',
+              'grey-background': 'rgb(220,220,220)',
+              'grey-border-color': 'rgb(222,222,222)',
+              'salam-light-blue': '#002035',
+              'salam-blue': '#081F33',
+              'base-grey': '#F5F8FB',
+              'light-grey': '#f8faf8',
+              'bright-green': '#00B140',
+              'salam-green': '#00AE42',
+              accent: '#00AE42',
+              'aqua-green': '#D9FFE9',
+              'light-red': '#FFEFEF',
+              'light-green': 'rgba(26, 176, 70, 0.2)',
+              //'primary': '#01B140',
+              'primary-light': '#c4e9d6',
+              'roman-silver': '#80909A',
+              'black-rgba': 'rgba(0, 0, 0, 0.35)',
+              'salam-background': '#E5E5E5',
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="bg-salam-green justify-end md:justify-between border-b-[0.5px] border-white px-12 w-full p-2 text-white flex"
+    >
+      <div class="hidden md:flex text-sm flex-row">
+        <a href="./aboutUs.html" class="py-2">About Us</a>
+        <div class="w-[1px] my-1 mx-4 bg-white"></div>
+        <a href="./contactUs.html" class="py-2">Contact Us</a>
+        <div class="w-[1px] my-1 mx-4 bg-white"></div>
+
+        <h3 class="py-2">Complaints</h3>
+      </div>
+      <div class="self-end"><h3>عربي</h3></div>
+    </header>
+
+    <!-- navigation-->
+    <nav class="h-20 md:h-full bg-salam-blue px-12 w-full p-5 text-white flex">
+      <!-- mobile burger menu -->
+      <input
+        type="checkbox"
+        name=""
+        id="menu-selector"
+        class="menu-button md:hidden"
+      />
+      <label for="menu-selector" class="menu-button-label text-3xl md:hidden">
+        <i class="fa fa-close"></i>
+        <i class="fa fa-bars"></i>
+      </label>
+      <a href="./index.html">
+        <img
+          class="logo absolute left-0 top-3 z-10 w-[15%] md:w-auto"
+          src="./assets/logo.svg"
+      /></a>
+      <div
+        class="menu-list hidden md:flex gap-8 w-full justify-center font-semibold text-sm flex-row"
+      >
+        <!-- navigation list(link+dropdown) -->
+        <!-- iPhone link -->
+        <a href="#" class="py-2">iPhone</a>
+        <!-- Postpaid dropdown -->
+        <div class="dropdown md:inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Postpaid</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <div class="flex">
+            <ul
+              class="dropdown-menu m-auto pl-40 md:pl-0 md:absolute right-10 md:-left-10 hidden bg-salam-blue content-end text-white text-left md:text-center pt-1 md:w-[150px]"
+            >
+              <li class="">
+                <a
+                  class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 74 Postpaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo Postpaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 179 Postpaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 199 Postpaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo Infinite Postpaid</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Prepaid Dropdown -->
+        <div class="dropdown md:inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Prepaid</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <div class="flex">
+            <ul
+              class="dropdown-menu m-auto pl-40 md:pl-0 md:absolute right-10 md:-left-10 hidden bg-salam-blue content-end text-white text-left md:text-center pt-1 md:w-[150px]"
+            >
+              <li class="">
+                <a
+                  class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 74 Prepaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo Prepaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 179 Prepaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo 199 Prepaid</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="rounded-b hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Solo Infinite Prepaid</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Embedded SIM link -->
+        <a href="#" class="py-2">Embedded SIM</a>
+        <!-- Addons Dropdown -->
+        <div class="dropdown md:inline-block relative">
+          <button class="py-2 rounded inline-flex items-center">
+            <span class="mr-1 font-semibold text-sm">Addons</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <div class="flex">
+            <ul
+              class="dropdown-menu m-auto pl-40 md:pl-0 md:absolute right-10 md:-left-10 hidden bg-salam-blue content-end text-white text-left md:text-center pt-1 md:w-[150px]"
+            >
+              <li class="">
+                <a
+                  class="rounded-t hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Data Roaming Bundles</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-salam-green py-3 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >IDD Bundles</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="py-2">FAQ</a>
+      </div>
+      <img
+        class="absolute hidden md:flex right-10"
+        src="./assets/profile.svg"
+      />
+    </nav>
+
+    <!-- main section -->
+    <main class="p-8 md:p-20 pt-20">
+      <div class="text-salam-blue">
+        <h1 class="text-4xl font-extrabold">Contact Us</h1>
+        <p class="py-3 font-light">Salam Contact Center</p>
+      </div>
+      <div class="contact-section md:py-10 flex">
+        <div class="my-auto">
+          <i
+            class="contact-border border-grey-border-color border-[1px] p-6 rounded-full fas fa-american-sign-language-interpreting"
+          ></i>
+        </div>
+        <div class="pl-7 text-salam-blue font-extralight">
+          <h3 class="text-2xl font-semibold">Call center number</h3>
+          <p>Inside KSA:</p>
+          <p>1101</p>
+          <p>Outside KSA:</p>
+          <p>+966511011101</p>
+        </div>
+      </div>
+      <div class="contact-section pt-7 flex">
+        <div class="my-auto">
+          <i
+            class="contact-border border-grey-border-color border-[1px] p-6 rounded-full fas fa-american-sign-language-interpreting"
+          ></i>
+        </div>
+        <div class="pl-7 text-salam-blue font-extralight">
+          <h3 class="text-2xl font-semibold">WhatsApp number</h3>
+
+          <p>+966511011101</p>
+        </div>
+      </div>
+      <div class="my-36 font-semibold text-xl">
+        <h3 class="my-5">Say Hello!</h3>
+        <div
+          class="font-light text-sm flex flex-col justify-center md:grid grid-cols-3 gap-5"
+        >
+          <input
+            placeholder="Enter your name"
+            class="placeholder:text-black bg-grey-input-color p-5"
+          />
+          <input
+            placeholder="Enter e-mail address"
+            class="placeholder:text-black bg-grey-input-color p-5"
+          />
+          <input
+            placeholder="Enter subject"
+            class="placeholder:text-black bg-grey-input-color p-5"
+          />
+          <textarea
+            placeholder="Write message"
+            class="h-40 p-7 placeholder:absolute placeholder:text-black bg-grey-input-color col-span-3"
+          ></textarea>
+          <button class="text-white bg-button-purple p-4">Send Message</button>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-salam-blue">
+      <div class="container mx-auto py-12 text-white">
+        <div
+          class="flex text-center md:text-left flex-col md:grid grid-cols-4 gap-3 py-12 mb-12 footer-links"
+        >
+          <a href="#">Salam</a>
+          <a href="#">Download App</a>
+          <a href="#">About Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Salam Mobile</a>
+          <a href="#">Activate SIM Card</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Complaints</a>
+          <a href="#">Salam Business</a>
+          <a href="#">APN Setting Guide</a>
+          <a href="#">News</a>
+          <a href="#">Regulating For Curbing SPAM Messages & Calls</a>
+          <a href="#">Salam Mobile Stores</a>
+        </div>
+        <div
+          class="flex flex-col md:flex-row text-center md:text-left justify-between footer-link-container pt-12"
+        >
+          <div class="md:flex items-center">
+            <p>© salam Mobile 2021 - 2023,</p>
+            <div class="flex gap-8 max-w-[700px] my-8 mx-5 justify-center">
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Security Policy</a>
+            </div>
+          </div>
+          <div class="flex gap-10 items-center justify-center">
+            <a href="#"
+              ><i class="fab fa-snapchat-ghost" aria-hidden="true"></i
+            ></a>
+            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'button-purple': 'rgb(82,69,194)',
+              'grey-input-color': 'rgb(245,245,245)',
+              'grey-border-color': 'rgb(222,222,222)',
+              'salam-light-blue': '#002035',
+              'salam-blue': '#081F33',
+              'base-grey': '#F5F8FB',
+              'light-grey': '#f8faf8',
+              'bright-green': '#00B140',
+              'salam-green': '#00AE42',
+              accent: '#00AE42',
+              'aqua-green': '#D9FFE9',
+              'light-red': '#FFEFEF',
+              'light-green': 'rgba(26, 176, 70, 0.2)',
+              //'primary': '#01B140',
+              'primary-light': '#c4e9d6',
+              'roman-silver': '#80909A',
+              'black-rgba': 'rgba(0, 0, 0, 0.35)',
+              'salam-background': '#E5E5E5',
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

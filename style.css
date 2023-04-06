@@ -114,3 +114,11 @@ nav {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.contact-section:hover ~ .contact-border {
+  transition-delay: 0.5s;
+  border-color: black;
+}
+.transition {
+  transition-duration: 1s;
+  transition-property: border-color;
+}
